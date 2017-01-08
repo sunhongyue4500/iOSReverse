@@ -1,0 +1,9 @@
+Package: com.sunhongyi.pilothacker
+Name: PilotHacker
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: A tweak for Garmin Pilot v8.5.3!
+Maintainer: hongyi
+Author: hongyi
+Section: Tweaks

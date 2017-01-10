@@ -3,7 +3,7 @@
     BOOL flag = %orig;
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Yo Tweak has installed" message:nil delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"🍻 Tweak has installed" message:nil delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert show];
 #pragma clang diagnostic pop
 
@@ -23,6 +23,12 @@
 
 %hook FeatureManager
 + (BOOL)featureSubscriptionIsValid:(long long)arg1 {
+	return YES;
+}
+%end
+
+%hook DownloadsDatabaseManager
+- (BOOL)downloadHasSubscription:(id)arg1 {
 	return YES;
 }
 %end

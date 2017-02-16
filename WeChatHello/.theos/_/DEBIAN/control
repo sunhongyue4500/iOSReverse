@@ -1,0 +1,10 @@
+Package: com.sunhongyi.weichattest
+Name: WeChatTest
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: hongyi
+Author: hongyi
+Section: Tweaks
+Version: 0.0.1-15+debug
+Installed-Size: 72
